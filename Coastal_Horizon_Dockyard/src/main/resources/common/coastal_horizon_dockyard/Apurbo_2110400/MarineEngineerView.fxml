@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="marineEngineerDashboardPane" prefHeight="700.0" prefWidth="1050.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="common.coastal_horizon_dockyard.Apurbo_2110400.MarineEngineerViewController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="398.0" layoutY="22.0" prefHeight="45.0" prefWidth="254.0" text="Coastal Horizon Dockyard">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="323.0" layoutY="78.0" prefHeight="65.0" prefWidth="404.0" text="MARINE ENGINEER" textFill="#4c0099">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="419.0" layoutY="134.0" prefHeight="36.0" prefWidth="212.0" text="Main Dashboard">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="99.0" layoutY="273.0" mnemonicParsing="false" onAction="#marinePropulsionInspectionButtonOnAction" prefHeight="65.0" prefWidth="142.0" style="-fx-background-color: #4C0099;" text="Propulsion Inspection" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="348.0" layoutY="273.0" mnemonicParsing="false" onAction="#marineEngineDiagnosisButtonOnAction" prefHeight="65.0" prefWidth="142.0" style="-fx-background-color: #4C0099;" text="Engine Diagnosis" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="831.0" layoutY="273.0" mnemonicParsing="false" onAction="#marineRepairMonitoringButtonOnAction" prefHeight="65.0" prefWidth="142.0" style="-fx-background-color: #4C0099;" text="Repair Monitoring" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="581.0" layoutY="273.0" mnemonicParsing="false" onAction="#marineMaintenanceButtonOnAction" prefHeight="65.0" prefWidth="142.0" style="-fx-background-color: #4C0099;" text="Maintenance" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="99.0" layoutY="413.0" mnemonicParsing="false" onAction="#marineTestSystemsButtonOnAction" prefHeight="65.0" prefWidth="142.0" style="-fx-background-color: #4C0099;" text="Test Systems" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="831.0" layoutY="413.0" mnemonicParsing="false" onAction="#marineEngineeringReportButtonOnAction" prefHeight="65.0" prefWidth="142.0" style="-fx-background-color: #4C0099;" text="Engineering Report" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="581.0" layoutY="413.0" mnemonicParsing="false" onAction="#marineCheckSafetyComplianceButtonOnAction" prefHeight="65.0" prefWidth="142.0" style="-fx-background-color: #4C0099;" text="Check Safety Compliance" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="348.0" layoutY="413.0" mnemonicParsing="false" onAction="#marineFuelEfficiencyAnalysisButtonOnAction" prefHeight="65.0" prefWidth="142.0" style="-fx-background-color: #4C0099;" text="Fuel Efficiency Analysis" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

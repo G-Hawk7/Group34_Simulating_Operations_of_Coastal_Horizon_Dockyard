@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1050.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="common.coastal_horizon_dockyard.Apurbo_2110400.ME_PropulsionViewController">
+   <children>
+      <Label layoutX="42.0" layoutY="41.0" prefHeight="39.0" prefWidth="211.0" text="Propulsion Inspection" textFill="#4c0099">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="125.0" prefHeight="20.0" prefWidth="38.0" text="Ship:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="propulsionShipComboBox" layoutX="154.0" layoutY="122.0" prefHeight="25.0" prefWidth="174.0" />
+      <Label layoutX="34.0" layoutY="164.0" prefHeight="20.0" prefWidth="55.0" text="Engine:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="propulsionEngineComboBox" layoutX="154.0" layoutY="162.0" prefHeight="25.0" prefWidth="174.0" />
+      <Label layoutX="34.0" layoutY="212.0" prefHeight="20.0" prefWidth="105.0" text="Inspection Date:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="propulsionInspectionDateDP" layoutX="154.0" layoutY="209.0" prefHeight="0.0" prefWidth="174.0" />
+      <Label layoutX="398.0" layoutY="125.0" prefHeight="20.0" prefWidth="114.0" text="Condition Status:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="propulsionConditionStatusComboBox" layoutX="518.0" layoutY="123.0" prefHeight="25.0" prefWidth="174.0" />
+      <Label layoutX="398.0" layoutY="165.0" prefHeight="20.0" prefWidth="63.0" text="Remarks:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="propulsionRemarksTextArea" layoutX="467.0" layoutY="174.0" prefHeight="152.0" prefWidth="372.0" />
+      <Button layoutX="886.0" layoutY="209.0" mnemonicParsing="false" onAction="#propulsionAddPropulsionDataButtonOnAction" prefHeight="78.0" prefWidth="105.0" text="Add Propulsion Data" textAlignment="CENTER" wrapText="true" />
+      <TableView fx:id="propulsionDataTableView" layoutX="14.0" layoutY="367.0" prefHeight="286.0" prefWidth="1022.0">
+        <columns>
+          <TableColumn fx:id="propulsionShipTableColumn" prefWidth="225.0" text="Ship" />
+          <TableColumn fx:id="propulsionEngineTableColumn" prefWidth="224.0" text="Engine" />
+            <TableColumn fx:id="propulsionInspectionDateTableColumn" prefWidth="137.0" text="Inspection Date" />
+            <TableColumn fx:id="propulsionConditionStatusTableColumn" prefWidth="145.0" text="Condition Status" />
+            <TableColumn fx:id="propulsionRemarksTableColumn" prefWidth="290.0" text="Remarks" />
+        </columns>
+      </TableView>
+      <Label layoutX="15.0" layoutY="342.0" prefHeight="17.0" prefWidth="94.0" text="Propulsion Data:" />
+      <Button layoutX="16.0" layoutY="661.0" mnemonicParsing="false" onAction="#backOnClick" prefHeight="25.0" prefWidth="75.0" text="Back" />
+   </children>
+</AnchorPane>
