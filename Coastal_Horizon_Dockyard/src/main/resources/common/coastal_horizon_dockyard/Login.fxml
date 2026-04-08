@@ -26,9 +26,9 @@
          </font>
       </TextField>
       <ComboBox fx:id="roleComboBox" editable="true" layoutX="311.0" layoutY="330.0" prefWidth="150.0" promptText="Select Role" visibleRowCount="8" />
-      <Button layoutX="287.0" layoutY="382.0" mnemonicParsing="false" onAction="#verifiesLoginOnClick" prefHeight="31.0" prefWidth="201.0" text="Verify login" />
+      <Button layoutX="287.0" layoutY="382.0" mnemonicParsing="false" onAction="#handleLoginOnClick" prefHeight="31.0" prefWidth="201.0" text="Login" />
       <Button layoutX="287.0" layoutY="434.0" mnemonicParsing="false" onAction="#handleForgotIDPasswordOnClick" prefHeight="31.0" prefWidth="201.0" text="Forgot ID/Password" />
-      <Label fx:id="displaysErrorLabel" layoutX="313.0" layoutY="275.0" prefHeight="25.0" prefWidth="150.0" text="Incorrect ID/Password" textFill="RED">
+      <Label fx:id="displaysErrorLabel" layoutX="289.0" layoutY="275.0" prefHeight="26.0" prefWidth="174.0" text="Incorrect ID/Password" textAlignment="CENTER" textFill="RED">
          <font>
             <Font size="14.0" />
          </font>

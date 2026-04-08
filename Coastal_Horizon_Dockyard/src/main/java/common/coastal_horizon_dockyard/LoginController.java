@@ -26,7 +26,7 @@ public class LoginController {
     }
 
     @FXML
-    void verifiesLoginOnClick(ActionEvent event) {
+    void handleLoginOnClick(ActionEvent event) {
 
     }
 
