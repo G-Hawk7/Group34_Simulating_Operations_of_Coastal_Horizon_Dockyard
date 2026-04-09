@@ -36,7 +36,7 @@ public class ManagingDirectorController {
     }
 
     @FXML
-    void opensShipConstructionContractsOnClick(ActionEvent event) {
+    void opensShipConstructionOnClick(ActionEvent event) {
 
     }
 
