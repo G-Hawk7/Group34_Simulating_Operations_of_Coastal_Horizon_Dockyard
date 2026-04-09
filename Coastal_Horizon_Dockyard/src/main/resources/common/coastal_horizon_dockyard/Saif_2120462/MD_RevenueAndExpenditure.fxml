@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="623.0" prefWidth="835.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="common.coastal_horizon_dockyard.Saif_2120462.MD_RevenueAndExpenditureController">
+   <children>
+      <Text layoutX="231.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Revenue &amp; Expenditure">
+         <font>
+            <Font name="System Italic" size="36.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="fiscalYearComboBox" editable="true" layoutX="168.0" layoutY="136.0" onAction="#selectsYearOnDropdown" prefWidth="150.0" promptText="Select Year" />
+      <TitledPane animated="false" layoutX="62.0" layoutY="199.0" prefHeight="127.0" prefWidth="182.0" text="Annual Financial Overview">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="operationalCostsLabel" layoutX="127.0" layoutY="39.0" text="0.00" />
+                  <Label fx:id="netProfitLossLabel" layoutX="113.0" layoutY="65.0" text="0.00" />
+                  <Label fx:id="totalRevenueLabel" layoutX="106.0" layoutY="14.0" text="0.00" />
+                  <Text layoutX="14.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Operational Costs =" />
+                  <Text layoutX="16.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Net Profit/Loss =" />
+                  <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Revenue =" />
+               </children>
+            </AnchorPane>
+        </content>
+      </TitledPane>
+      <Text layoutX="62.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Financial Overview" />
+      <TableView fx:id="financialVarianceTableView" layoutX="136.0" layoutY="372.0" prefHeight="162.0" prefWidth="550.0">
+        <columns>
+          <TableColumn fx:id="reportIDColumn" prefWidth="88.00000762939453" text="Report ID" />
+          <TableColumn fx:id="expenseCategoryColumn" prefWidth="115.199951171875" text="Expense Category" />
+            <TableColumn fx:id="budgetedAmountColumn" prefWidth="120.0" text="Budgeted Amount" />
+            <TableColumn fx:id="actualSpendingColumn" prefWidth="116.79995727539062" text="Actual Spending" />
+            <TableColumn fx:id="varianceColumn" prefWidth="108.80002441406248" text="Variance" />
+        </columns>
+      </TableView>
+      <PieChart fx:id="revenueExpenditurePieChart" layoutX="463.0" layoutY="121.0" prefHeight="206.0" prefWidth="239.0" />
+      <Button layoutX="676.0" layoutY="564.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="98.0" text="Back" />
+   </children>
+</AnchorPane>
