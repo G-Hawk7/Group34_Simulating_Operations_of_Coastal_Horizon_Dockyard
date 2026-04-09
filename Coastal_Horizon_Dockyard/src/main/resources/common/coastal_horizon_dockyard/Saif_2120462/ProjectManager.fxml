@@ -5,30 +5,51 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
-<AnchorPane prefHeight="561.0" prefWidth="912.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="common.coastal_horizon_dockyard.Saif_2120462.ProjectManagerController">
+<AnchorPane prefHeight="648.0" prefWidth="926.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="common.coastal_horizon_dockyard.Saif_2120462.ProjectManagerController">
    <children>
-      <Text layoutX="318.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Project Manager">
+      <Text layoutX="318.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Project Manager">
          <font>
             <Font name="System Bold Italic" size="36.0" />
          </font>
       </Text>
-      <Text layoutX="371.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dashboard">
+      <Text layoutX="371.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dashboard">
          <font>
             <Font name="System Italic" size="36.0" />
          </font>
       </Text>
-      <Button layoutX="70.0" layoutY="253.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="157.0" text="Vessel Construction">
+      <Button layoutX="183.0" layoutY="184.0" mnemonicParsing="false" onAction="#opensVesselConstructionOnClick" prefHeight="79.0" prefWidth="243.0" style="-fx-background-color: skyblue;" text="Vessel Construction">
          <font>
-            <Font name="Arial" size="12.0" />
+            <Font name="Arial" size="18.0" />
          </font>
       </Button>
-      <Button layoutX="473.0" layoutY="253.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="158.0" text="Material Consumption" />
-      <Button layoutX="260.0" layoutY="253.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="186.0" text="Engineering Team Management" />
-      <Button layoutX="260.0" layoutY="386.0" mnemonicParsing="false" text="Button" />
-      <Button layoutX="301.0" layoutY="428.0" mnemonicParsing="false" text="Button" />
-      <Button layoutX="391.0" layoutY="399.0" mnemonicParsing="false" text="Button" />
-      <Button layoutX="183.0" layoutY="441.0" mnemonicParsing="false" text="Button" />
-      <Button layoutX="292.0" layoutY="477.0" mnemonicParsing="false" text="Button" />
+      <Button layoutX="183.0" layoutY="398.0" mnemonicParsing="false" onAction="#opensMaterialConsumptionOnClick" prefHeight="79.0" prefWidth="243.0" style="-fx-background-color: skyblue;" text="Material Consumption">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button layoutX="183.0" layoutY="293.0" mnemonicParsing="false" onAction="#opensEngineeringTeamManagementOnClick" prefHeight="79.0" prefWidth="243.0" style="-fx-background-color: skyblue;" text="Engineering Team Management">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Button layoutX="484.0" layoutY="293.0" mnemonicParsing="false" onAction="#opensSubContractorsOnClick" prefHeight="79.0" prefWidth="243.0" style="-fx-background-color: skyblue;" text="Sub-Contractors">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button layoutX="484.0" layoutY="184.0" mnemonicParsing="false" onAction="#opensDryDockingOperationsOnClick" prefHeight="79.0" prefWidth="243.0" style="-fx-background-color: skyblue;" text="Dry-Docking Operation">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button layoutX="484.0" layoutY="500.0" mnemonicParsing="false" onAction="#opensSeaTrialsOnClick" prefHeight="79.0" prefWidth="243.0" style="-fx-background-color: skyblue;" text="Sea Trials">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button layoutX="183.0" layoutY="500.0" mnemonicParsing="false" onAction="#opensVesselDesignsOnClick" prefHeight="79.0" prefWidth="243.0" style="-fx-background-color: skyblue;" text="Vessel Designs">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button layoutX="484.0" layoutY="398.0" mnemonicParsing="false" onAction="#opensMaterialAlertsOnClick" prefHeight="79.0" prefWidth="243.0" style="-fx-background-color: skyblue;" text="Material Alerts">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button layoutX="798.0" layoutY="598.0" mnemonicParsing="false" onAction="#backToLoginOnClick" prefHeight="26.0" prefWidth="98.0" text="Back" />
    </children>
 </AnchorPane>
