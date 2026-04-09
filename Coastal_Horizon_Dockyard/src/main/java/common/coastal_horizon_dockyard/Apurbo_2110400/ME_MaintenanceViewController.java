@@ -87,21 +87,6 @@ public class ME_MaintenanceViewController
             progress = "No";
         }
 
-        if(ship.isEmpty()||maintenanceType.isEmpty()||maintenanceDate==null||priority.isEmpty()) {
-            Alert warning = new Alert(Alert.AlertType.ERROR);
-            warning.setContentText("All Fields Must Be Filled!");
-            warning.show();
-            return;
-        }
-
-
-        ME_MaintenanceModel newData = new ME_MaintenanceModel(ship, maintenanceType, maintenanceDate, priority);
-        maintenanceScheduledJobsTableView.getItems().add(newData);
-
-        Alert success = new Alert(Alert.AlertType.INFORMATION);
-        success.setContentText("Propulsion Data Added Successfully.");
-        success.show();
-
     }
 
     @javafx.fxml.FXML
@@ -109,6 +94,6 @@ public class ME_MaintenanceViewController
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Apurbo_2110400/MarineEngineerView.fxml"));
         Node node = fxmlLoader.load();
         maintenanceMainPane.getChildren().setAll(node);
-        
+
     }
 }

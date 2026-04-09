@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="700.0" prefWidth="1050.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CONTROLLER_NAME">
+   <children>
+      <Label layoutX="60.0" layoutY="46.0" prefHeight="30.0" prefWidth="180.0" text="Repair Monitoring" textFill="#4c0099">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="118.0" prefHeight="24.0" prefWidth="100.0" text="Repairing Logs">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TableView layoutX="31.0" layoutY="158.0" prefHeight="224.0" prefWidth="989.0">
+        <columns>
+          <TableColumn prefWidth="169.0" text="Job ID" />
+          <TableColumn prefWidth="186.0" text="Status" />
+            <TableColumn prefWidth="202.0" text="Engineer" />
+            <TableColumn minWidth="0.0" prefWidth="156.0" text="Deadline" />
+            <TableColumn prefWidth="274.0" text="Work Summary" />
+        </columns>
+      </TableView>
+      <Label layoutX="31.0" layoutY="465.0" prefHeight="24.0" prefWidth="48.0" text="Job ID:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField layoutX="116.0" layoutY="464.0" prefHeight="25.0" prefWidth="167.0" />
+      <Label layoutX="31.0" layoutY="506.0" prefHeight="24.0" prefWidth="48.0" text="Status:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ComboBox layoutX="115.0" layoutY="505.0" prefHeight="25.0" prefWidth="167.0" />
+      <Label layoutX="31.0" layoutY="546.0" prefHeight="24.0" prefWidth="66.0" text="Engineer:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <CheckBox layoutX="115.0" layoutY="549.0" mnemonicParsing="false" text="Full-Time" />
+      <CheckBox layoutX="204.0" layoutY="549.0" mnemonicParsing="false" text="Part-Time" />
+      <Label layoutX="31.0" layoutY="584.0" prefHeight="24.0" prefWidth="66.0" text="Deadline:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <DatePicker layoutX="111.0" layoutY="584.0" prefHeight="25.0" prefWidth="167.0" />
+      <Line endX="930.0" layoutX="120.0" layoutY="412.0" startX="-120.0" />
+      <Label layoutX="473.0" layoutY="452.0" prefHeight="24.0" prefWidth="106.0" text="Work Summary:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextArea layoutX="588.0" layoutY="442.0" prefHeight="151.0" prefWidth="423.0" />
+   </children>
+</AnchorPane>
