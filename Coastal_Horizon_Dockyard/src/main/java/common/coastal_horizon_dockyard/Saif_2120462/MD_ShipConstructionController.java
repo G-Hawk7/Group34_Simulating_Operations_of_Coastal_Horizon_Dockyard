@@ -20,13 +20,13 @@ public class MD_ShipConstructionController {
     private Label approvedLabel;
 
     @FXML
-    private TableColumn<?, ?> capacityColumn;
+    private TableColumn<MD_ShipConstructionModel, String> capacityColumn;
 
     @FXML
-    private TableColumn<?, ?> clientNameColumn;
+    private TableColumn<MD_ShipConstructionModel, String> clientNameColumn;
 
     @FXML
-    private TableColumn<?, ?> contractIDColumn;
+    private TableColumn<MD_ShipConstructionModel, Integer> contractIDColumn;
 
     @FXML
     private RadioButton disapproveRadioButton;
@@ -35,16 +35,16 @@ public class MD_ShipConstructionController {
     private Label disapprovedLabel;
 
     @FXML
-    private TableColumn<?, ?> financialStatusColumn;
+    private TableColumn<MD_ShipConstructionModel, String> financialStatusColumn;
 
     @FXML
-    private TableColumn<?, ?> profitMarginColumn;
+    private TableColumn<MD_ShipConstructionModel, Double> profitMarginColumn;
 
     @FXML
-    private TableView<?> shipConstructionContractsTableView;
+    private TableView<MD_ShipConstructionModel> shipConstructionContractsTableView;
 
     @FXML
-    private TableColumn<?, ?> statusColumn;
+    private TableColumn<MD_ShipConstructionModel, String> statusColumn;
 
     @FXML
     void approvesStatusOnClick(ActionEvent event) {
