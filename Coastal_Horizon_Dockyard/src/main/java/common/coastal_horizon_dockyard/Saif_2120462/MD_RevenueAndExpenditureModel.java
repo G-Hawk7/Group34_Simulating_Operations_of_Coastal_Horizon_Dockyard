@@ -8,7 +8,7 @@ public class MD_RevenueAndExpenditureModel {
     private Double actualSpendingColumn;
     private Double varianceColumn;
 
-    public MD_RevenueAndExpenditureModel(int reportIdColumn, String expenseCategoryColumn, Double budgetedAmountColumn, Double actualSpendingColumn, Double varianceColumn) {
+    public MD_RevenueAndExpenditureModel(int reportIdColumn, String expenseCategoryColumn, Double budgetedAmountColumn, Double actualSpendingColumn) {
         this.reportIdColumn = reportIdColumn;
         this.expenseCategoryColumn = expenseCategoryColumn;
         this.budgetedAmountColumn = budgetedAmountColumn;
