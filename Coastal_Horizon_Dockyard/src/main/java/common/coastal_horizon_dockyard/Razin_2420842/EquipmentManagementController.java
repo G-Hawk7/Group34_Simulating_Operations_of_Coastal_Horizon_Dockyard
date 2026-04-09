@@ -1,17 +1,17 @@
 package common.coastal_horizon_dockyard.Razin_2420842;
 
-public class ScheduleTimelineController
+public class EquipmentManagementController
 {
     @javafx.fxml.FXML
-    private Label outputLabel;
+    private TextField projectIDTextField;
     @javafx.fxml.FXML
-    private TextField projectidTextField;
+    private ComboBox equipmentTextField;
 
     @javafx.fxml.FXML
     public void initialize() {
     }
 
     @javafx.fxml.FXML
-    public void CreateButtonAction(ActionEvent actionEvent) {
+    public void AssignButtonAction(ActionEvent actionEvent) {
     }
 }

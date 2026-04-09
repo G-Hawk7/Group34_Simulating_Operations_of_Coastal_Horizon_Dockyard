@@ -1,14 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="common.coastal_horizon_dockyard.Razin_2420842.ShipProgressController"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="common.coastal_horizon_dockyard.Razin_2420842.ShipProgressController">
+   <children>
+      <Label layoutX="210.0" layoutY="14.0" text="Ship Progress">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="shipidTextField" layoutX="226.0" layoutY="99.0" />
+      <TextField layoutX="226.0" layoutY="143.0" />
+      <Label layoutX="177.0" layoutY="103.0" text="Ship ID : " />
+      <Button layoutX="275.0" layoutY="194.0" mnemonicParsing="false" onAction="#updateBUtton" text="Update" />
+      <Label layoutX="154.0" layoutY="147.0" text="progressbur" />
+      <Label fx:id="outputLabel" layoutX="148.0" layoutY="238.0" prefHeight="139.0" prefWidth="292.0" text="output">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+   </children>
 </AnchorPane>
