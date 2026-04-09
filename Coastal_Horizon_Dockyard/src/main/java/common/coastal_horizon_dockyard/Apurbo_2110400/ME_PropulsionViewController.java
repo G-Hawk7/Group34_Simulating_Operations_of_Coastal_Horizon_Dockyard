@@ -1,9 +1,15 @@
 package common.coastal_horizon_dockyard.Apurbo_2110400;
 
 import javafx.event.ActionEvent;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
 
+import java.io.IOException;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
@@ -35,6 +41,9 @@ public class ME_PropulsionViewController
 
 
     public static List<ME_PropulsionModel> dataList = new ArrayList<>();
+    @javafx.fxml.FXML
+
+    private AnchorPane propulsionMainPane;
 
 
     @javafx.fxml.FXML
@@ -48,6 +57,7 @@ public class ME_PropulsionViewController
         propulsionEngineTableColumn.setCellValueFactory(new PropertyValueFactory<>("engine"));
         propulsionInspectionDateTableColumn.setCellValueFactory(new PropertyValueFactory<>("inspectionDate"));
         propulsionConditionStatusTableColumn.setCellValueFactory(new PropertyValueFactory<>("conditionStatus"));
+        propulsionRemarksTableColumn.setCellValueFactory(new PropertyValueFactory<>("remarks"));
 
         propulsionDataTableView.getItems().setAll(dataList);
 
@@ -74,13 +84,17 @@ public class ME_PropulsionViewController
         propulsionDataTableView.getItems().add(newData);
 
         Alert success = new Alert(Alert.AlertType.INFORMATION);
-        success.setContentText("Propulsion Data Added Successfullly.");
+        success.setContentText("Propulsion Data Added Successfully.");
         success.show();
     }
 
 
 
     @javafx.fxml.FXML
-    public void backOnClick(ActionEvent actionEvent) {
+    public void backOnClick(ActionEvent actionEvent) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Apurbo_2110400/MarineEngineerView.fxml"));
+        Node node = fxmlLoader.load();
+        propulsionMainPane.getChildren().setAll(node);
+
     }
 }

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="diagnosisMainPane" prefHeight="700.0" prefWidth="1050.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="common.coastal_horizon_dockyard.Apurbo_2110400.ME_DiagnosisViewController">
+   <children>
+      <Label layoutX="54.0" layoutY="48.0" prefHeight="33.0" prefWidth="162.0" text="Engine Diagnosis" textFill="#4c0099">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="54.0" layoutY="117.0" prefHeight="17.0" prefWidth="69.0" text="Engine ID:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="diagnosisEngineIDTextField" layoutX="142.0" layoutY="115.0" />
+      <Label layoutX="54.0" layoutY="161.0" prefHeight="20.0" prefWidth="75.0" text="Error Code:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="diagnosisErrorCodeTextField" layoutX="142.0" layoutY="159.0" />
+      <Label layoutX="54.0" layoutY="213.0" prefHeight="20.0" prefWidth="82.0" text="Fault Status:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="diagnosisFaultStatusComboBox" layoutX="142.0" layoutY="211.0" prefWidth="150.0" />
+      <Label layoutX="400.0" layoutY="127.0" prefHeight="20.0" prefWidth="82.0" text="Fault Details:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="diagnosisFaultDetailsTextArea" layoutX="489.0" layoutY="119.0" prefHeight="153.0" prefWidth="357.0" />
+      <Button layoutX="902.0" layoutY="172.0" mnemonicParsing="false" onAction="#diagnosisRunDiagnosticsButtonOnAction" prefHeight="63.0" prefWidth="91.0" text="Run Diagnostics" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TableView fx:id="diagnosisTableView" layoutX="42.0" layoutY="328.0" prefHeight="271.0" prefWidth="951.0">
+        <columns>
+          <TableColumn fx:id="diagnosisEngineIDTableColumn" prefWidth="202.0" text="Engine ID" />
+          <TableColumn fx:id="diagnosisErrorCodeTableColumn" prefWidth="236.0" text="Error Code" />
+            <TableColumn fx:id="diagnosisFaultStatusTableColumn" prefWidth="223.0" text="Fault Status" />
+            <TableColumn fx:id="diagnosisFaultDetailsTableColumn" prefWidth="288.0" text="Fault Details" />
+        </columns>
+      </TableView>
+      <Button layoutX="42.0" layoutY="639.0" mnemonicParsing="false" onAction="#backOnClick" prefHeight="25.0" prefWidth="69.0" text="Back" />
+      <Label layoutX="48.0" layoutY="301.0" prefHeight="20.0" prefWidth="127.0" text="Engine Diagnostics:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
