@@ -1,14 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="common.coastal_horizon_dockyard.Razin_2420842.MaterialCoordinationController"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="common.coastal_horizon_dockyard.Razin_2420842.MaterialCoordinationController">
+   <children>
+      <Label layoutX="155.0" layoutY="14.0" text="Material Coordination">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <TableView layoutX="64.0" layoutY="60.0" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <Button layoutX="289.0" layoutY="226.0" mnemonicParsing="false" onAction="#ApproveButton" text="Button" />
+      <Label fx:id="outputLabel" layoutX="164.0" layoutY="276.0" prefHeight="109.0" prefWidth="270.0" text="Label" />
+   </children>
 </AnchorPane>
