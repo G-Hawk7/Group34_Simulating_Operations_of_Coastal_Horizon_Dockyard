@@ -9,7 +9,7 @@ public class ArrivalDepartureLogController
     @javafx.fxml.FXML
     private TextField DateTextfield;
     @javafx.fxml.FXML
-    private ComboBox<> arrivalvombobox;
+    private ComboBox<String> arrivalvombobox;
     @javafx.fxml.FXML
     private TextField ShipIDTextField;
 
