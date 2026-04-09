@@ -94,6 +94,6 @@ public class ME_SafetyViewController
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Apurbo_2110400/MarineEngineerView.fxml"));
         Node node = fxmlLoader.load();
         safetyMainPane.getChildren().setAll(node);
-        
+
     }
 }
