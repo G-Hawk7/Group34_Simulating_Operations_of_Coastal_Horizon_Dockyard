@@ -68,7 +68,7 @@ public class LO_OperationsViewController
     }
 
 
-    
+
     @javafx.fxml.FXML
     public void operationsShowOperationsDataSheetButtonOnAction(ActionEvent actionEvent) {
 
