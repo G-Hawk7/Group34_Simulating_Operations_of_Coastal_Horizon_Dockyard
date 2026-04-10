@@ -1,5 +1,8 @@
 package common.coastal_horizon_dockyard.Razin_2420842;
 
+import javafx.event.ActionEvent;
+import javafx.scene.control.Label;
+
 public class MaterialCoordinationController
 {
     @javafx.fxml.FXML
