@@ -1,15 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="700.0" prefWidth="1050.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CONTROLLER_NAME">
+<AnchorPane fx:id="purchaseMainPane" prefHeight="700.0" prefWidth="1050.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="common.coastal_horizon_dockyard.Apurbo_2110400.LO_PurchaseViewController">
    <children>
       <Label layoutX="34.0" layoutY="36.0" prefHeight="35.0" prefWidth="157.0" text="Purchase Order" textFill="#4c0099">
          <font>
             <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="105.0" prefHeight="22.0" prefWidth="97.0" text="Items Required:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="purchaseItemsRequiredComboBox" layoutX="144.0" layoutY="104.0" prefWidth="150.0" />
+      <Label layoutX="34.0" layoutY="158.0" prefHeight="22.0" prefWidth="64.0" text="Quantity:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="purchaseQuantityTextField" layoutX="145.0" layoutY="157.0" />
+      <Label layoutX="34.0" layoutY="213.0" prefHeight="22.0" prefWidth="64.0" text="Supplier:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="purchaseSupplierComboBox" layoutX="145.0" layoutY="212.0" prefWidth="150.0" />
+      <Label layoutX="34.0" layoutY="272.0" prefHeight="22.0" prefWidth="37.0" text="Cost:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="purchaseCostTextField" layoutX="146.0" layoutY="271.0" />
+      <Button layoutX="98.0" layoutY="394.0" mnemonicParsing="false" onAction="#purchasePlacePurchaseOrderButtonOnAction" prefHeight="49.0" prefWidth="97.0" text="Place Purchase Order" textAlignment="CENTER" wrapText="true" />
+      <Button layoutX="27.0" layoutY="634.0" mnemonicParsing="false" onAction="#backOnClick" text="Back" />
+      <Line endX="-60.0" endY="554.0" layoutX="445.0" layoutY="154.0" startX="-60.0" startY="-154.0" />
+      <TableView fx:id="purchaseTableView" layoutX="400.0" layoutY="113.0" prefHeight="542.0" prefWidth="633.0">
+        <columns>
+          <TableColumn fx:id="purchaseItemsRequiredTableColumn" prefWidth="195.0" text="Items Required" />
+          <TableColumn fx:id="purchaseQuantityTableColumn" prefWidth="97.0" text="Quantity" />
+            <TableColumn fx:id="purchaseSupplierTableColumn" prefWidth="132.0" text="Supplier" />
+            <TableColumn fx:id="purchaseCostTableColumn" prefWidth="78.0" text="Cost" />
+            <TableColumn fx:id="purchaseOrderProgressTableColumn" prefWidth="130.0" text="Order Progress" />
+        </columns>
+      </TableView>
+      <Label layoutX="30.0" layoutY="322.0" prefHeight="22.0" prefWidth="105.0" text="Order Progress:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="purchaseOrderProgressComboBox" layoutX="147.0" layoutY="321.0" prefWidth="150.0" />
+      <Label layoutX="400.0" layoutY="83.0" prefHeight="22.0" prefWidth="140.0" text="Purchase Order Logs:">
+         <font>
+            <Font size="14.0" />
          </font>
       </Label>
    </children>
