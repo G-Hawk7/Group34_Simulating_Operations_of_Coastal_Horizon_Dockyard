@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="scheduleMainPane" prefHeight="700.0" prefWidth="1050.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="common.coastal_horizon_dockyard.Apurbo_2110400.LO_ScheduleViewController">
+   <children>
+      <Label layoutX="34.0" layoutY="39.0" prefHeight="37.0" prefWidth="161.0" text="Dock Schedule" textFill="#4c0099">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="38.0" layoutY="118.0" prefHeight="24.0" prefWidth="78.0" text="Select Ship:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="scheduleShipComboBox" layoutX="144.0" layoutY="118.0" prefWidth="150.0" />
+      <Label layoutX="38.0" layoutY="169.0" prefHeight="24.0" prefWidth="98.0" text="Dock Number:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="scheduleDockNumberComboBox" layoutX="144.0" layoutY="169.0" prefWidth="150.0" />
+      <Label layoutX="38.0" layoutY="219.0" prefHeight="24.0" prefWidth="90.0" text="Pier Number:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="schedulePierNumberComboBox" layoutX="144.0" layoutY="219.0" prefWidth="150.0" />
+      <Label layoutX="429.0" layoutY="145.0" prefHeight="24.0" prefWidth="78.0" text="Arrival Date:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="scheduleArrivalDateDP" layoutX="546.0" layoutY="145.0" />
+      <Label layoutX="429.0" layoutY="194.0" prefHeight="24.0" prefWidth="105.0" text="Departure Date:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="scheduleDepartureDateDP" layoutX="546.0" layoutY="194.0" />
+      <Button layoutX="821.0" layoutY="157.0" mnemonicParsing="false" onAction="#scheduleViewDockScheduleButtonOnAction" prefHeight="50.0" prefWidth="98.0" text="View Dock Schedule" textAlignment="CENTER" wrapText="true" />
+      <TableView fx:id="scheduleTableView" layoutX="18.0" layoutY="336.0" prefHeight="319.0" prefWidth="1015.0">
+        <columns>
+          <TableColumn fx:id="scheduleShipTableColumn" prefWidth="246.0" text="Ship" />
+          <TableColumn fx:id="scheduleDockNumberTableColumn" prefWidth="209.0" text="Dock Number" />
+            <TableColumn fx:id="schedulePierNumberTableColumn" prefWidth="231.0" text="Pier Number" />
+            <TableColumn fx:id="scheduleArrivalDateTableColumn" prefWidth="173.0" text="Arrival Date" />
+            <TableColumn fx:id="scheduleDepartureDateTableColumn" prefWidth="155.0" text="Departure Date" />
+        </columns>
+      </TableView>
+      <Label layoutX="18.0" layoutY="304.0" prefHeight="24.0" prefWidth="150.0" text="Dock Scheduling Data:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="18.0" layoutY="661.0" mnemonicParsing="false" onAction="#backOnClick" text="Back" />
+   </children>
+</AnchorPane>

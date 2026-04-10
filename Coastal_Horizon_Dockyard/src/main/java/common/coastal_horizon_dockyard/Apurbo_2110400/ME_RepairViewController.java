@@ -80,7 +80,7 @@ public class ME_RepairViewController
         repairTableView.getItems().add(newData);
 
         Alert success = new Alert(Alert.AlertType.INFORMATION);
-        success.setContentText("Propulsion Data Added Successfully.");
+        success.setContentText("Repair Data Added Successfully.");
         success.show();
 
     }
