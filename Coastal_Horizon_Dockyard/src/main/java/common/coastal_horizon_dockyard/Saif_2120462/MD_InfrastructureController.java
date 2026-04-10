@@ -85,6 +85,17 @@ public class MD_InfrastructureController {
 
         infrastructureTableView.setItems(proposalList);
 
+        infrastructureTableView.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
+            if (newValue != null) {
+                currentCapacityLabel.setText(newValue.getCurrenCapacity());
+                projectedCapacityLabel.setText(newValue.getProjectedCapacity());
+                approvedStatusLabel.setVisible(false);
+                disapprovedStatusLabel.setVisible(false);
+                approveRadioButton.setSelected(false);
+                disapproveRadioButton.setSelected(false);
+            }
+        });
+
         approvedStatusLabel.setVisible(false);
         disapprovedStatusLabel.setVisible(false);
         approveRadioButton.setDisable(true);
