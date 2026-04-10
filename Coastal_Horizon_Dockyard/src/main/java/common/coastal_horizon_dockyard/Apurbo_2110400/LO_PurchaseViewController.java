@@ -78,6 +78,6 @@ public class LO_PurchaseViewController
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Apurbo_2110400/LogisticsOfficerView.fxml"));
         Node node = fxmlLoader.load();
         purchaseMainPane.getChildren().setAll(node);
-        
+
     }
 }
