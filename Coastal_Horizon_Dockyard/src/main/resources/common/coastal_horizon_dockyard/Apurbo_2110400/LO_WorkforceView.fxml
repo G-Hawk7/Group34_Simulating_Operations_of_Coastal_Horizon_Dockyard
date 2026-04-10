@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="workforceMainPane" prefHeight="700.0" prefWidth="1050.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="common.coastal_horizon_dockyard.Apurbo_2110400.LO_WorkforceViewController">
+   <children>
+      <Label layoutX="-50.0" layoutY="14.0" text="Label" />
+      <Label layoutX="37.0" layoutY="42.0" prefHeight="42.0" prefWidth="206.0" text="Workforce Allocation" textFill="#4c0099">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="137.0" prefHeight="33.0" prefWidth="70.0" text="Worker ID:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="workforceWorkerIDTextField" layoutX="179.0" layoutY="141.0" />
+      <Label layoutX="37.0" layoutY="190.0" prefHeight="33.0" prefWidth="97.0" text="Worker Name:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="workforceWorkerNameTextField" layoutX="180.0" layoutY="194.0" />
+      <Label layoutX="37.0" layoutY="239.0" prefHeight="33.0" prefWidth="115.0" text="Worker Category:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="workforceWorkerCategoryComboBox" layoutX="178.0" layoutY="243.0" prefWidth="150.0" />
+      <Label layoutX="442.0" layoutY="137.0" prefHeight="33.0" prefWidth="70.0" text="Work Shift:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="workforceWorkShiftDayRadioButton" layoutX="549.0" layoutY="145.0" mnemonicParsing="false" text="Day-Shift" />
+      <RadioButton fx:id="workforceWorkShiftNightRadioButton" layoutX="650.0" layoutY="145.0" mnemonicParsing="false" text="Night-Shift" />
+      <Label layoutX="442.0" layoutY="190.0" prefHeight="33.0" prefWidth="115.0" text="Worker Details:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="workforceWorkerDetailsTextArea" layoutX="549.0" layoutY="194.0" prefHeight="96.0" prefWidth="405.0" />
+      <Button layoutX="549.0" layoutY="314.0" mnemonicParsing="false" onAction="#workforceAddToWorkLogButtonOnAction" prefHeight="55.0" prefWidth="115.0" text="Add To Work Log" wrapText="true" />
+      <TableView fx:id="workforceTableView" layoutX="14.0" layoutY="407.0" prefHeight="227.0" prefWidth="1014.0">
+        <columns>
+          <TableColumn fx:id="workforceWorkerIDTableColumn" prefWidth="156.0" text="Worker ID" />
+          <TableColumn fx:id="workforceWorkerNameTableColumn" prefWidth="255.0" text="Worker Name" />
+            <TableColumn fx:id="workforceWorkerCategoryTableColumn" prefWidth="165.0" text="Worker Category" />
+            <TableColumn fx:id="workforceWorkerShiftTableColumn" prefWidth="163.0" text="Work Shift" />
+            <TableColumn fx:id="workforceWorkerDetailsTableColumn" prefWidth="274.0" text="Worker Details" />
+        </columns>
+      </TableView>
+      <Label layoutX="14.0" layoutY="377.0" prefHeight="33.0" prefWidth="71.0" text="Work Log:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="25.0" layoutY="652.0" mnemonicParsing="false" onAction="#backOnClick" text="Back" />
+   </children>
+</AnchorPane>
