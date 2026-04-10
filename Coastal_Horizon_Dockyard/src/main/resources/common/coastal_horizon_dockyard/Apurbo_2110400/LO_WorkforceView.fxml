@@ -11,7 +11,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane fx:id="workforceMainPane" prefHeight="700.0" prefWidth="1050.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="common.coastal_horizon_dockyard.Apurbo_2110400.LO_WorkforceViewController">
    <children>
       <Label layoutX="-50.0" layoutY="14.0" text="Label" />
