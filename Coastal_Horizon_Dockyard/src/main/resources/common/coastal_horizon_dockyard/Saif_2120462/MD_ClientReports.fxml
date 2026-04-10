@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="536.0" prefWidth="804.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="common.coastal_horizon_dockyard.Saif_2120462.MD_ClientReportsController">
+   <children>
+      <Text layoutX="301.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Client Reports">
+         <font>
+            <Font name="System Italic" size="36.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
