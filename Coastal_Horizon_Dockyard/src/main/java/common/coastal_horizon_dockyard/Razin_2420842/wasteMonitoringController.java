@@ -1,11 +1,16 @@
 package common.coastal_horizon_dockyard.Razin_2420842;
 
+import javafx.event.ActionEvent;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
+
 public class wasteMonitoringController
 {
     @javafx.fxml.FXML
-    private ComboBox wastetypeCombobox;
+    private ComboBox<String> wastetypeCombobox;
     @javafx.fxml.FXML
-    private ComboBox disposalMethodCombobox;
+    private ComboBox<String> disposalMethodCombobox;
     @javafx.fxml.FXML
     private Label outputLabel;
     @javafx.fxml.FXML

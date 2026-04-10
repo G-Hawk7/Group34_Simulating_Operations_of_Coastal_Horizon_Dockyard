@@ -1,5 +1,10 @@
 package common.coastal_horizon_dockyard.Razin_2420842;
 
+import javafx.event.ActionEvent;
+import javafx.scene.control.CheckBox;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
+
 public class EquipmentCertificateController
 {
     @javafx.fxml.FXML

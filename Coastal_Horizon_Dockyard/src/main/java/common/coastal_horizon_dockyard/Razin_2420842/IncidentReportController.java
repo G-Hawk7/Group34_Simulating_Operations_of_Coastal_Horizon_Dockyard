@@ -1,5 +1,7 @@
 package common.coastal_horizon_dockyard.Razin_2420842;
 
+import javafx.event.ActionEvent;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
 
 public class IncidentReportController
@@ -7,7 +9,7 @@ public class IncidentReportController
     @javafx.fxml.FXML
     private TextField idTextField;
     @javafx.fxml.FXML
-    private ComboBox SeverityCombobox;
+    private ComboBox<String> SeverityCombobox;
     @javafx.fxml.FXML
     private TextField nameTextField;
 
