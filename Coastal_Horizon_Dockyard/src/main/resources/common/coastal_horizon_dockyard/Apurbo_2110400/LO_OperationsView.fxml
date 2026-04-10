@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="operationsMainPane" prefHeight="700.0" prefWidth="1050.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="common.coastal_horizon_dockyard.Apurbo_2110400.LO_OperationsViewController">
+   <children>
+      <Label layoutX="35.0" layoutY="37.0" prefHeight="30.0" prefWidth="111.0" text="Operations" textFill="#4c0099">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="240.0" prefHeight="30.0" prefWidth="189.0" text="Ship Arrival &amp; Docking Date:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="operationsShipArrivalDockingDateDP" layoutX="224.0" layoutY="243.0" prefHeight="25.0" prefWidth="150.0" />
+      <Label layoutX="35.0" layoutY="104.0" prefHeight="30.0" prefWidth="78.0" text="Ship Name:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="operationsShipNameTextField" layoutX="225.0" layoutY="104.0" />
+      <Label layoutX="35.0" layoutY="143.0" prefHeight="30.0" prefWidth="131.0" text="Active Docking Jobs:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="operationsActiveDockingJobsTextField" layoutX="225.0" layoutY="145.0" />
+      <Label layoutX="35.0" layoutY="191.0" prefHeight="30.0" prefWidth="78.0" text="Cargo Used:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="operationsCargoUsedComboBox" layoutX="224.0" layoutY="194.0" prefWidth="150.0" />
+      <Label layoutX="520.0" layoutY="87.0" prefHeight="30.0" prefWidth="137.0" text="Operation Overview:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="operationsOverviewTextArea" layoutX="520.0" layoutY="119.0" prefHeight="167.0" prefWidth="444.0" />
+      <Button layoutX="520.0" layoutY="301.0" mnemonicParsing="false" onAction="#operationsShowOperationsDataSheetButtonOnAction" prefHeight="49.0" prefWidth="131.0" text="Show Operations Data Sheet" textAlignment="CENTER" wrapText="true" />
+      <TableView fx:id="operationsTableView" layoutX="13.0" layoutY="403.0" prefHeight="245.0" prefWidth="1021.0">
+        <columns>
+          <TableColumn fx:id="operationsShipNameTableColumn" prefWidth="220.0" text="Ship Name" />
+          <TableColumn fx:id="operationsActiveDockingJobsTableColumn" prefWidth="155.0" text="Active Docking Jobs" />
+            <TableColumn fx:id="operationsCargoUsedTableColumn" prefWidth="208.0" text="Cargo Used" />
+            <TableColumn fx:id="operationsShipArrivalDockingDateTableColumn" prefWidth="192.0" text="Ship Arrival &amp; Docking Date" />
+            <TableColumn fx:id="operationsOverviewTableColumn" prefWidth="245.0" text="Operation Overview" />
+        </columns>
+      </TableView>
+      <Label layoutX="19.0" layoutY="373.0" prefHeight="30.0" prefWidth="150.0" text="Operations Data Sheet:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="19.0" layoutY="661.0" mnemonicParsing="false" onAction="#backOnClick" text="Back" />
+   </children>
+</AnchorPane>

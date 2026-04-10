@@ -3,8 +3,8 @@ package common.coastal_horizon_dockyard.Apurbo_2110400;
 import java.time.LocalDate;
 
 public class LO_EquipmentModel {
-    String equipmentName, quantity, conditionStatus, locations;
-    LocalDate acquisitionDate;
+    private String equipmentName, quantity, conditionStatus, locations;
+    private LocalDate acquisitionDate;
 
     public LO_EquipmentModel() {
     }

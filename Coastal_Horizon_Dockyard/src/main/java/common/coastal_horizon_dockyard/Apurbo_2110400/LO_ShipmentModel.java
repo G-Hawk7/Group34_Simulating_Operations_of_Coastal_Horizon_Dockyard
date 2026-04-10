@@ -4,8 +4,8 @@ import java.time.LocalDate;
 
 public class LO_ShipmentModel {
 
-    String shipmentID, shipmentStatus, deliveryProgress, shipmentHistory;
-    LocalDate deliveryDate;
+    private String shipmentID, shipmentStatus, deliveryProgress, shipmentHistory;
+    private LocalDate deliveryDate;
 
     public LO_ShipmentModel() {
     }
