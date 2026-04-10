@@ -13,7 +13,7 @@ public class SafetyInspectoinController
 
     @javafx.fxml.FXML
     public void initialize() {
-        checklistItems.getItems().addAll("Fire","PPE",)
+        checklistItems.getItems().addAll("Fire","PPE");
     }
 
     @javafx.fxml.FXML
