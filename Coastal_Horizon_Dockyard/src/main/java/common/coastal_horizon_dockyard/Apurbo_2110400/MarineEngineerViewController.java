@@ -78,5 +78,8 @@ public class MarineEngineerViewController
 
     @javafx.fxml.FXML
     public void backOnClick(ActionEvent actionEvent) {
+
+        SceneSwitcher.switchTo(actionEvent, "Login.fxml");
+        
     }
 }
