@@ -47,26 +47,29 @@ public class SafetyInspectionController
 
     @javafx.fxml.FXML
     public void submitActionButton(ActionEvent actionEvent) {
+        inspectiontableview.getItems().clear();
+        inspectiontableview.getItems().addAll(listofsefty);
+    }
+
+    @javafx.fxml.FXML
+    public void backButton(ActionEvent actionEvent) {
+
+    }
+
+    @javafx.fxml.FXML
+    public void TabelviewActionButton(ActionEvent actionEvent) {
         String date = dateTextField.getText();
         String issue1 = issue1TextField.getText();
         String issue2 = issue2TextField.getText();
         String issue3 = issueTextField3.getText();
         String selectedChecklist = safetyChecklist.getValue();
+
         if (safetyChecklist.getSelectionModel().getSelectedItem() == null){
-            outputLabel.setText("please select Checklist option. ");
+            outputLabel.setText("please select Checklist option.");
             return;
         }
-        common.coastal_horizon_dockyard.Razin_2420842.safetyInspection safety = new safetyInspection(date, issue1, issue2, issue3, selectedChecklist);
+        safetyInspection safety = new safetyInspection(date, issue1, issue2, selectedChecklist , issue3);
         listofsefty.add(safety);
-    }
-
-    @javafx.fxml.FXML
-    public void backButton(ActionEvent actionEvent) {
-    }
-
-    @javafx.fxml.FXML
-    public void TabelviewActionButton(ActionEvent actionEvent) {
-        inspectiontableview.getItems().clear();
-        inspectiontableview.getItems().addAll();
+        outputLabel.setText("Data Saved to List.");
     }
 }
