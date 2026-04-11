@@ -9,13 +9,12 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="common.coastal_horizon_dockyard.Razin_2420842.EquipmentManagementController">
+<AnchorPane prefHeight="400.0" prefWidth="694.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="common.coastal_horizon_dockyard.Razin_2420842.EquipmentManagementController">
    <children>
-      <TableView layoutX="386.0" layoutY="60.0" prefHeight="200.0" prefWidth="200.0">
+      <TableView fx:id="euipmentTable" layoutX="347.0" layoutY="62.0" prefHeight="260.0" prefWidth="335.0">
         <columns>
-          <TableColumn prefWidth="75.0" text="C1" />
-          <TableColumn prefWidth="75.0" text="C2" />
+          <TableColumn fx:id="projectCal" prefWidth="168.0" text="Project ID" />
+          <TableColumn fx:id="selectCol" prefWidth="166.0" text="Select Equipment" />
         </columns>
       </TableView>
       <Label layoutX="143.0" layoutY="14.0" text="Equipment Management">
