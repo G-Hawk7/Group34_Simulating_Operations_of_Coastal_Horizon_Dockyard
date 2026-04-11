@@ -79,16 +79,18 @@ public class MD_ShipyardDirectivesController {
 
     @FXML
     void broadcastMessageOnClick(ActionEvent event) {
-        String inputTitle = titleTextField.getText();
-        String inputMessage = messageTextArea.getText();
+        idCounter++;
+        Integer id = idCounter;
+        String title = titleTextField.getText();
+        String message = messageTextArea.getText();
         LocalDate effectiveDate = effectiveDatePicker.getValue();
 
-        idCounter++;
-        String generatedID = "N-" + idCounter;
+        MD_ShipyardDirectivesModel newDirective = new MD_ShipyardDirectivesModel(id, title, message, effectiveDate);
 
-        //MD_ShipyardDirectivesModel newDirective = new MD_ShipyardDirectivesModel(generatedID, inputTitle, inputMessage, effectiveDate);
+        historyList.add(newDirective);
+        broadcastSuccesLabel.setVisible(true);
 
-        // An unsolvable error is occurring above, so this goal is not complete//
     }
 
 }
+   // Invalid info showing in the table when running this scene, probably build error//

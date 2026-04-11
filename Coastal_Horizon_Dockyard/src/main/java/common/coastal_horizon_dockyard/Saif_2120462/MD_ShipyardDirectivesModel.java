@@ -19,6 +19,9 @@ public class MD_ShipyardDirectivesModel {
         this.messageTextArea = messageTextArea;
     }
 
+    public MD_ShipyardDirectivesModel(Integer id, String title, String message, LocalDate effectiveDate) {
+    }
+
     public int getNoticeIDColumn() {
         return noticeIDColumn;
     }
