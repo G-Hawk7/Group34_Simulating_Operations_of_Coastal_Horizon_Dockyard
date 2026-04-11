@@ -1,5 +1,6 @@
 package common.coastal_horizon_dockyard.Saif_2120462;
 
+import common.coastal_horizon_dockyard.SceneSwitcher;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
@@ -69,6 +70,8 @@ public class MD_DeptHeadManagementController {
 
     @FXML
     void backToMDDashboardOnClick(ActionEvent event) {
+
+        SceneSwitcher.switchTo(event, "Saif_2120462/ManagingDirector.fxml");
 
     }
 

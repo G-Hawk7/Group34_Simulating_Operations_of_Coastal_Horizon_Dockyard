@@ -7,7 +7,6 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="common.coastal_horizon_dockyard.Rejwan_2030588.Issue_Materials">
    <children>
       <Text layoutX="197.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Issue Materials">
@@ -22,5 +21,6 @@
       <Button layoutX="124.0" layoutY="187.0" mnemonicParsing="false" text="Validate" />
       <Button layoutX="218.0" layoutY="187.0" mnemonicParsing="false" text="Issue" />
       <Label layoutX="104.0" layoutY="298.0" text="Receipt" />
+      <Button layoutX="510.0" layoutY="337.0" mnemonicParsing="false" onAction="#JumpToInventoryAndStoreKeeperOnClick" text="back" />
    </children>
 </AnchorPane>

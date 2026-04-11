@@ -1,5 +1,6 @@
 package common.coastal_horizon_dockyard.Saif_2120462;
 
+import common.coastal_horizon_dockyard.SceneSwitcher;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -65,7 +66,7 @@ public class PM_EngTeamMgtController {
         PM_EngTeamMgtModel selectedTeam = teamTableView.getSelectionModel().getSelectedItem();
         if (selectedTeam != null) {
             String teamName = selectedTeam.getTeamNameColumn();
-            String message = teamName + " has been successfully assigned to: Hull bulding task. ";
+            String message = teamName + " has been successfully assigned to: Hull building task. ";
             confirmationTextArea.setText(message);
         }
         else {
@@ -76,6 +77,8 @@ public class PM_EngTeamMgtController {
 
     @FXML
     void backToPMDashboardOnClick(ActionEvent event) {
+
+        SceneSwitcher.switchTo(event, "Saif_2120462/ProjectManager.fxml");
 
     }
 
