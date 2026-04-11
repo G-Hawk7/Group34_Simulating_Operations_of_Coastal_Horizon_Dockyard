@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="623.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="common.coastal_horizon_dockyard.Saif_2120462.MD_YardProjectsController">
+   <children>
+      <Text layoutX="342.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Yard Projects">
+         <font>
+            <Font name="System Italic" size="36.0" />
+         </font>
+      </Text>
+      <TableView fx:id="expansionTableView" layoutX="82.0" layoutY="215.0" prefHeight="174.0" prefWidth="703.0">
+        <columns>
+          <TableColumn fx:id="expansionIDColumn" prefWidth="131.20001220703125" text="Expansion ID" />
+          <TableColumn fx:id="areaNameColumn" prefWidth="251.1999969482422" text="Area Name" />
+            <TableColumn fx:id="estimatedCostColumn" prefWidth="184.0" text="Estimated Cost" />
+            <TableColumn fx:id="statusColumn" prefWidth="137.60009765625" text="Status" />
+        </columns>
+      </TableView>
+      <CheckBox fx:id="permitCheckBox" layoutX="544.0" layoutY="140.0" mnemonicParsing="false" onAction="#validationCriteriaOnAction" text="Govt Permits obtained">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="envCheckBox" layoutX="544.0" layoutY="168.0" mnemonicParsing="false" onAction="#validationCriteriaOnAction" text="Environmental Clearance verified">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <Button fx:id="approveExpansionButton" disable="true" layoutX="307.0" layoutY="404.0" mnemonicParsing="false" onAction="#approveExpansionOnClick" prefHeight="38.0" prefWidth="228.0" text="Approve Expansion">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="722.0" layoutY="573.0" mnemonicParsing="false" onAction="#backToMDDashboardOnClick" prefHeight="26.0" prefWidth="98.0" text="Back" />
+      <TextArea fx:id="planTextArea" editable="false" layoutX="38.0" layoutY="468.0" prefHeight="73.0" prefWidth="774.0" />
+      <Label fx:id="approvedStatusLabel" layoutX="580.0" layoutY="408.0" text="Approved!" textFill="#002bff" visible="false">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="82.0" layoutY="149.0" mnemonicParsing="false" onAction="#viewExpansionPlansOnClick" prefHeight="38.0" prefWidth="228.0" text="View Expansion Plans">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
