@@ -51,10 +51,6 @@ public class SafetyInspectionController
         inspectiontableview.getItems().addAll(listofsefty);
     }
 
-    @Deprecated
-    public void backButton(ActionEvent actionEvent) {
-
-    }
 
     @javafx.fxml.FXML
     public void TabelviewActionButton(ActionEvent actionEvent) {

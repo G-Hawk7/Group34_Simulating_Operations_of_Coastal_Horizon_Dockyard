@@ -18,7 +18,7 @@
       </Text>
       <ComboBox layoutX="152.0" layoutY="107.0" prefWidth="150.0" promptText="Standards" />
       <Button layoutX="63.0" layoutY="107.0" mnemonicParsing="false" text="Load Rules" />
-      <TableView layoutX="357.0" layoutY="194.0" prefHeight="278.0" prefWidth="337.0">
+      <TableView layoutX="167.0" layoutY="172.0" prefHeight="278.0" prefWidth="337.0">
         <columns>
           <TableColumn prefWidth="75.0" text="Rules" />
           <TableColumn prefWidth="75.0" text="C2" />
@@ -26,5 +26,6 @@
       </TableView>
       <Button layoutX="325.0" layoutY="107.0" mnemonicParsing="false" text="Verify Compliance" />
       <Label layoutX="554.0" layoutY="107.0" text="Result" />
+      <Button layoutX="587.0" layoutY="406.0" mnemonicParsing="false" onAction="#JumpsToQualityControlInspectorOnClick" text="back" />
    </children>
 </AnchorPane>

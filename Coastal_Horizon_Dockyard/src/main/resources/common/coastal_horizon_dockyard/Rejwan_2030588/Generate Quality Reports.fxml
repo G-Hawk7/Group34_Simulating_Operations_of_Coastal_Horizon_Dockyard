@@ -7,7 +7,6 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="common.coastal_horizon_dockyard.Rejwan_2030588.Generate_Quality_Reports">
    <children>
       <Text layoutX="157.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Generate Quality Reports">
@@ -17,6 +16,7 @@
       </Text>
       <ComboBox layoutX="14.0" layoutY="85.0" prefWidth="150.0" promptText="Report Type" />
       <Button layoutX="183.0" layoutY="85.0" mnemonicParsing="false" text="Generate" />
-      <TextArea layoutX="376.0" layoutY="139.0" prefHeight="200.0" prefWidth="200.0" promptText="Output" />
+      <TextArea layoutX="259.0" layoutY="129.0" prefHeight="200.0" prefWidth="200.0" promptText="Output" />
+      <Button layoutX="515.0" layoutY="355.0" mnemonicParsing="false" onAction="#JumpsToQualityControlInspectorOnClick" text="back" />
    </children>
 </AnchorPane>
