@@ -1,5 +1,6 @@
 package common.coastal_horizon_dockyard.Razin_2420842;
 
+import common.coastal_horizon_dockyard.SceneSwitcher;
 import javafx.event.ActionEvent;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TableColumn;
@@ -54,5 +55,10 @@ public class EquipmentManagementController
             equipmentTextField.getSelectionModel().clearSelection();
             System.out.println(equipmentName + " assigned to Project " + projectID);
         }
+    }
+
+    @javafx.fxml.FXML
+    public void NextpageButton(ActionEvent actionEvent) {
+        SceneSwitcher.switchTo(actionEvent,"Razin_2420842/ShipProgress.fxml");
     }
 }

@@ -16,7 +16,7 @@
             <Font size="24.0" />
          </font>
       </Text>
-      <TableView layoutX="189.0" layoutY="89.0" prefHeight="310.0" prefWidth="410.0">
+      <TableView layoutX="189.0" layoutY="89.0" prefHeight="310.0" prefWidth="215.0">
         <columns>
           <TableColumn prefWidth="75.0" text="Stock" />
             <TableColumn prefWidth="75.0" text="left" />
@@ -24,6 +24,7 @@
         </columns>
       </TableView>
       <Button layoutX="108.0" layoutY="126.0" mnemonicParsing="false" text="Verify" />
-      <Label layoutX="378.0" layoutY="71.0" text="Result" />
+      <Label layoutX="412.0" layoutY="93.0" text="Result" />
+      <Button layoutX="522.0" layoutY="349.0" mnemonicParsing="false" onAction="#JumpToInventoryAndStoreKeeperOnClick" text="back" />
    </children>
 </AnchorPane>

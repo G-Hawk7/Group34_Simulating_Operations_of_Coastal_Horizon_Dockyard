@@ -2,6 +2,7 @@ module common.coastal_horizon_dockyard {
     requires javafx.controls;
     requires javafx.fxml;
     requires javafx.graphics;
+    requires common.coastal_horizon_dockyard;
 
 
     opens common.coastal_horizon_dockyard to javafx.fxml;

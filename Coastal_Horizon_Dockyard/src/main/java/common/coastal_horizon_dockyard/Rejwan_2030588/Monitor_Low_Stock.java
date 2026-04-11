@@ -1,7 +1,13 @@
 package common.coastal_horizon_dockyard.Rejwan_2030588;
 
-public class Monitor_Low_Stock
-{
-    @javafx.fxml.FXML
-    public void initialize() {
-    }}
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+
+public class Monitor_Low_Stock {
+
+    @FXML
+    void JumpToInventoryAndStoreKeeperOnClick(ActionEvent event) {
+
+    }
+
+}

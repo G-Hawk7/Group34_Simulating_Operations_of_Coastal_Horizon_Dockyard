@@ -23,5 +23,6 @@
             <Font size="30.0" />
          </font>
       </Label>
+      <Button layoutX="365.0" layoutY="194.0" mnemonicParsing="false" onAction="#NextpageButton" text="Next PaGe" />
    </children>
 </AnchorPane>

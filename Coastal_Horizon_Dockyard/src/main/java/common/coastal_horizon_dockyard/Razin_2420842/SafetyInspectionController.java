@@ -1,5 +1,6 @@
 package common.coastal_horizon_dockyard.Razin_2420842;
 
+import common.coastal_horizon_dockyard.SceneSwitcher;
 import javafx.event.ActionEvent;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
@@ -71,7 +72,6 @@ public class SafetyInspectionController
 
     @javafx.fxml.FXML
     public void NextButton(ActionEvent actionEvent) {
-
-
+        SceneSwitcher.switchTo(actionEvent,"Razin_2420842/PermitSystem.fxml");
     }
 }

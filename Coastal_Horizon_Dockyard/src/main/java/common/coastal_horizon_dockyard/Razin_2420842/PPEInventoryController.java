@@ -1,5 +1,6 @@
 package common.coastal_horizon_dockyard.Razin_2420842;
 
+import common.coastal_horizon_dockyard.SceneSwitcher;
 import javafx.event.ActionEvent;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
@@ -50,5 +51,6 @@ public class PPEInventoryController
 
     @javafx.fxml.FXML
     public void nextButton(ActionEvent actionEvent) {
+        SceneSwitcher.switchTo(actionEvent,"Razin_2420842/EquipmentCertificate.fxml");
     }
 }

@@ -7,7 +7,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="common.coastal_horizon_dockyard.Razin_2420842.EquipmentCertificateController">
    <children>
       <Label layoutX="157.0" layoutY="14.0" text="Equipment Certificate">
@@ -26,5 +25,6 @@
       <Label layoutX="143.0" layoutY="132.0" text="Mark Unsafe : " />
       <CheckBox fx:id="unsafecheckbox" layoutX="280.0" layoutY="132.0" mnemonicParsing="false" text="Unsafe" />
       <Button layoutX="255.0" layoutY="165.0" mnemonicParsing="false" onAction="#checkButton" text="Check" />
+      <Button layoutX="323.0" layoutY="165.0" mnemonicParsing="false" onAction="#NextButtonnn" text="Next" />
    </children>
 </AnchorPane>

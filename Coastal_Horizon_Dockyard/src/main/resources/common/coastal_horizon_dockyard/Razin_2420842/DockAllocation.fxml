@@ -33,5 +33,6 @@
             <TableColumn fx:id="dockcol" prefWidth="113.0" text="Dock " />
         </columns>
       </TableView>
+      <Button layoutX="342.0" layoutY="262.0" mnemonicParsing="false" onAction="#NExtButton" text="Next" />
    </children>
 </AnchorPane>
