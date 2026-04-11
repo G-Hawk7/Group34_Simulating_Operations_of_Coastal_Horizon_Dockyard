@@ -3,28 +3,41 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="402.0" prefWidth="555.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="common.coastal_horizon_dockyard.Razin_2420842.SafetyInspectionController">
+<AnchorPane prefHeight="484.0" prefWidth="843.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="common.coastal_horizon_dockyard.Razin_2420842.SafetyInspectionController">
    <children>
-      <Label layoutX="187.0" layoutY="57.0" text="Safety Inspection">
+      <Label layoutX="351.0" layoutY="27.0" text="Safety Inspection">
          <font>
             <Font size="30.0" />
          </font>
       </Label>
-      <Label layoutX="55.0" layoutY="134.0" text="Date : " />
-      <TextField fx:id="dateTextField" layoutX="103.0" layoutY="130.0" promptText="Inspection Date" />
-      <ComboBox fx:id="safetyChecklist" layoutX="318.0" layoutY="130.0" prefWidth="150.0" />
-      <Label layoutX="262.0" layoutY="134.0" text="Checklist : " />
-      <Label layoutX="55.0" layoutY="181.0" text="Issue1 : " />
-      <Label layoutX="55.0" layoutY="216.0" text="Issue2 : " />
-      <Label layoutX="55.0" layoutY="254.0" text="Issue3 : " />
-      <TextField fx:id="issue1TextField" layoutX="103.0" layoutY="177.0" />
-      <TextField fx:id="issue2TextField" layoutX="103.0" layoutY="212.0" />
-      <TextField fx:id="issueTextField3" layoutX="103.0" layoutY="250.0" />
-      <Button layoutX="141.0" layoutY="309.0" mnemonicParsing="false" onAction="#submitActionButton" text="Submit" />
-      <Label fx:id="outputLabel" layoutX="278.0" layoutY="264.0" prefHeight="90.0" prefWidth="186.0" />
+      <Label layoutX="55.0" layoutY="132.0" text="Date : " />
+      <TextField fx:id="dateTextField" layoutX="103.0" layoutY="128.0" promptText="Inspection Date" />
+      <ComboBox fx:id="safetyChecklist" layoutX="102.0" layoutY="267.0" prefWidth="150.0" />
+      <Label layoutX="40.0" layoutY="262.0" text="Checklist : " />
+      <Label layoutX="55.0" layoutY="170.0" text="Issue1 : " />
+      <Label layoutX="47.0" layoutY="201.0" text="Issue2 : " />
+      <Label layoutX="47.0" layoutY="230.0" text="Issue3 : " />
+      <TextField fx:id="issue1TextField" layoutX="102.0" layoutY="166.0" />
+      <TextField fx:id="issue2TextField" layoutX="102.0" layoutY="197.0" />
+      <TextField fx:id="issueTextField3" layoutX="102.0" layoutY="226.0" />
+      <Button layoutX="28.0" layoutY="419.0" mnemonicParsing="false" onAction="#TabelviewActionButton" text="Submit" />
+      <Label fx:id="outputLabel" layoutX="99.0" layoutY="308.0" prefHeight="90.0" prefWidth="156.0" />
+      <TableView fx:id="inspectiontableview" layoutX="265.0" layoutY="127.0" prefHeight="338.0" prefWidth="555.0">
+        <columns>
+          <TableColumn fx:id="datecol" prefWidth="88.7999267578125" text="Date" />
+          <TableColumn fx:id="checklistcol" prefWidth="91.199951171875" text="Checklist" />
+            <TableColumn fx:id="issuecol" prefWidth="137.0" text="issue1" />
+            <TableColumn fx:id="issue2col" prefWidth="117.0" text="issue2" />
+            <TableColumn fx:id="issue3col" prefWidth="121.0" text="issue3" />
+        </columns>
+      </TableView>
+      <Button layoutX="197.0" layoutY="419.0" mnemonicParsing="false" onAction="#backButton" text="Back" />
+      <Button layoutX="99.0" layoutY="419.0" mnemonicParsing="false" onAction="#submitActionButton" text="Table view" />
    </children>
 </AnchorPane>

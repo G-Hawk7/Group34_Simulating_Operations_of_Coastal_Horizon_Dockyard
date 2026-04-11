@@ -1,11 +1,11 @@
 package common.coastal_horizon_dockyard.Rejwan_2030588;
 
-import javafx.scene.control.TextField;
+import javafx.scene.control.ToggleGroup;
 
-public class main2Controller
+public class Verify_Welding_Quality
 {
     @javafx.fxml.FXML
-    private TextField TextIffdjsm;
+    private ToggleGroup pass;
 
     @javafx.fxml.FXML
     public void initialize() {

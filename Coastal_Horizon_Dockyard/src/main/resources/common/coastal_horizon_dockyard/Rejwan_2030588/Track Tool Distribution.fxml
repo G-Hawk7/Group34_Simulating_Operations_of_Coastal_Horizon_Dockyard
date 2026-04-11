@@ -8,7 +8,8 @@
 
 <AnchorPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
-            fx:controller="common.coastal_horizon_dockyard.Razin_2420842.SafetyInspectionp2Controller"
+            fx:controller="common.coastal_horizon_dockyard.Rejwan_2030588.Track_Tool_Distribution"
             prefHeight="400.0" prefWidth="600.0">
 
 </AnchorPane>
+
