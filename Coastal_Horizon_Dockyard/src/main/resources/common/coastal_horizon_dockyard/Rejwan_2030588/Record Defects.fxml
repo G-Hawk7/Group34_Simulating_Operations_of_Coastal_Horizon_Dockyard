@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="common.coastal_horizon_dockyard.Rejwan_2030588.Record_Defects">
+   <children>
+      <TextField layoutX="74.0" layoutY="115.0" promptText="Defect Name" />
+      <TitledPane animated="false" layoutX="365.0" layoutY="97.0" text="Severity">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+        </content>
+      </TitledPane>
+      <ComboBox layoutX="171.0" layoutY="195.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>
