@@ -58,13 +58,15 @@ public class SafetyInspectionController
         }
         common.coastal_horizon_dockyard.Razin_2420842.safetyInspection safety = new safetyInspection(date, issue1, issue2, issue3, selectedChecklist);
         listofsefty.add(safety);
+    }
 
+    @javafx.fxml.FXML
+    public void backButton(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void TabelviewActionButton(ActionEvent actionEvent) {
         inspectiontableview.getItems().clear();
         inspectiontableview.getItems().addAll();
-
-
-
-
-
     }
 }

@@ -26,7 +26,7 @@
       <TextField fx:id="issue1TextField" layoutX="102.0" layoutY="166.0" />
       <TextField fx:id="issue2TextField" layoutX="102.0" layoutY="197.0" />
       <TextField fx:id="issueTextField3" layoutX="102.0" layoutY="226.0" />
-      <Button layoutX="102.0" layoutY="419.0" mnemonicParsing="false" onAction="#submitActionButton" text="Submit" />
+      <Button layoutX="28.0" layoutY="419.0" mnemonicParsing="false" onAction="#TabelviewActionButton" text="Submit" />
       <Label fx:id="outputLabel" layoutX="99.0" layoutY="308.0" prefHeight="90.0" prefWidth="156.0" />
       <TableView fx:id="inspectiontableview" layoutX="265.0" layoutY="127.0" prefHeight="338.0" prefWidth="555.0">
         <columns>
@@ -37,6 +37,7 @@
             <TableColumn fx:id="issue3col" prefWidth="121.0" text="issue3" />
         </columns>
       </TableView>
-      <Button layoutX="197.0" layoutY="419.0" mnemonicParsing="false" onAction="#submitActionButton" text="Back" />
+      <Button layoutX="197.0" layoutY="419.0" mnemonicParsing="false" onAction="#backButton" text="Back" />
+      <Button layoutX="99.0" layoutY="419.0" mnemonicParsing="false" onAction="#submitActionButton" text="Table view" />
    </children>
 </AnchorPane>
