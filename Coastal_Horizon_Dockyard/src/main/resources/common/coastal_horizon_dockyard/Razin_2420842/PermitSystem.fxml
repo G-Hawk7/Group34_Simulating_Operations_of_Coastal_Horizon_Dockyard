@@ -5,31 +5,38 @@
 <?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.ToggleGroup?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="common.coastal_horizon_dockyard.Razin_2420842.PermitSytemController">
+<AnchorPane prefHeight="484.0" prefWidth="707.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="common.coastal_horizon_dockyard.Razin_2420842.PermitSytemController">
    <children>
-      <TableView layoutX="43.0" layoutY="92.0" prefHeight="200.0" prefWidth="514.0">
+      <TableView fx:id="fulltable" layoutX="304.0" layoutY="82.0" prefHeight="385.0" prefWidth="379.0">
         <columns>
-          <TableColumn prefWidth="75.0" text="C1" />
-          <TableColumn prefWidth="75.0" text="C2" />
+          <TableColumn fx:id="dateCol" maxWidth="980.0" minWidth="30.0" prefWidth="98.0" text="Date" />
+          <TableColumn fx:id="requestcol" maxWidth="1900.0" minWidth="30.0" prefWidth="190.0" text="Request Details" />
+            <TableColumn fx:id="approvalcol" maxWidth="1110.0" minWidth="30.0" prefWidth="111.0" text="Approval " />
         </columns>
       </TableView>
-      <Label layoutX="43.0" layoutY="14.0" text="Permit System">
+      <Label layoutX="259.0" layoutY="14.0" text="Permit System">
          <font>
             <Font size="30.0" />
          </font>
       </Label>
-      <RadioButton layoutX="138.0" layoutY="60.0" mnemonicParsing="false" text="Approve">
+      <Label layoutX="43.0" layoutY="122.0" />
+      <Button layoutX="186.0" layoutY="227.0" mnemonicParsing="false" onAction="#generatepermitButton" text="Generate Permit" />
+      <Label layoutX="28.0" layoutY="149.0" text="Request Details : " />
+      <RadioButton fx:id="yesRedioButton" layoutX="152.0" layoutY="182.0" mnemonicParsing="false" text="Yes!">
          <toggleGroup>
             <ToggleGroup fx:id="GroupA" />
          </toggleGroup>
       </RadioButton>
-      <RadioButton layoutX="214.0" layoutY="60.0" mnemonicParsing="false" text="Reject" toggleGroup="$GroupA" />
-      <Label layoutX="43.0" layoutY="60.0" text="Request Details : " />
-      <Button layoutX="43.0" layoutY="317.0" mnemonicParsing="false" onAction="#generatepermitButton" text="Generate Permit" />
+      <RadioButton fx:id="norediobutton" layoutX="225.0" layoutY="182.0" mnemonicParsing="false" text="No" toggleGroup="$GroupA" />
+      <Label layoutX="73.0" layoutY="182.0" text="Approval" />
+      <TextField fx:id="dateTextfield" layoutX="130.0" layoutY="106.0" />
+      <Label layoutX="81.0" layoutY="110.0" text="Date :" />
+      <TextField fx:id="requestDetailsTextField" layoutX="130.0" layoutY="145.0" />
+      <Label fx:id="outputlabel" layoutX="60.0" layoutY="306.0" prefHeight="131.0" prefWidth="209.0" />
    </children>
 </AnchorPane>
