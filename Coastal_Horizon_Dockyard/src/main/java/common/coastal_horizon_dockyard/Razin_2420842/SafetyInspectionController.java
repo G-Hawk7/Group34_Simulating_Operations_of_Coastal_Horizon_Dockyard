@@ -38,10 +38,10 @@ public class SafetyInspectionController
         safetyChecklist.getItems().addAll("PPE Check","Fire Safety","Equipment Safety");
 
         datecol.setCellValueFactory(new PropertyValueFactory<>("Date"));
-        checklistcol.setCellValueFactory(new PropertyValueFactory<>("Date"));
-        datecol.setCellValueFactory(new PropertyValueFactory<>("Date"));
-        datecol.setCellValueFactory(new PropertyValueFactory<>("Date"));
-        datecol.setCellValueFactory(new PropertyValueFactory<>("Date"));
+        checklistcol.setCellValueFactory(new PropertyValueFactory<>("list"));
+        issuecol.setCellValueFactory(new PropertyValueFactory<>("issue1"));
+        issue2col.setCellValueFactory(new PropertyValueFactory<>("issue2"));
+        issue3col.setCellValueFactory(new PropertyValueFactory<>("issue3"));
     }
     ArrayList<safetyInspection> listofsefty  = new ArrayList<>();
 
@@ -58,6 +58,10 @@ public class SafetyInspectionController
         }
         common.coastal_horizon_dockyard.Razin_2420842.safetyInspection safety = new safetyInspection(date, issue1, issue2, issue3, selectedChecklist);
         listofsefty.add(safety);
+
+        inspectiontableview.getItems().clear();
+        inspectiontableview.getItems().addAll();
+
 
 
 
