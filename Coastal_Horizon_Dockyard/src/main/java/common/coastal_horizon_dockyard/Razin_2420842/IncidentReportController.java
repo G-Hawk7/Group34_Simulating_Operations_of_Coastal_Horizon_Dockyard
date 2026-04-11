@@ -1,5 +1,6 @@
 package common.coastal_horizon_dockyard.Razin_2420842;
 
+import common.coastal_horizon_dockyard.SceneSwitcher;
 import javafx.event.ActionEvent;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TableColumn;
@@ -68,5 +69,6 @@ public class IncidentReportController
 
     @javafx.fxml.FXML
     public void NextpageBUtton(ActionEvent actionEvent) {
+        SceneSwitcher.switchTo(actionEvent,"Razin_2420842/wasteMonitoring.fxml");
     }
 }

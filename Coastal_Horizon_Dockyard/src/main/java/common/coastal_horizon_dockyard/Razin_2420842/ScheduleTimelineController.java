@@ -1,5 +1,6 @@
 package common.coastal_horizon_dockyard.Razin_2420842;
 
+import common.coastal_horizon_dockyard.SceneSwitcher;
 import javafx.event.ActionEvent;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
@@ -50,5 +51,6 @@ public class ScheduleTimelineController
 
     @javafx.fxml.FXML
     public void nextActionButton(ActionEvent actionEvent) {
+        SceneSwitcher.switchTo(actionEvent,"Razin_2420842/EquipmentManagement.fxml");
     }
 }

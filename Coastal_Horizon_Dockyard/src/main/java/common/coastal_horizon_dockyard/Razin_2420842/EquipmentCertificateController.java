@@ -1,5 +1,6 @@
 package common.coastal_horizon_dockyard.Razin_2420842;
 
+import common.coastal_horizon_dockyard.SceneSwitcher;
 import javafx.event.ActionEvent;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.Label;
@@ -51,5 +52,10 @@ public class EquipmentCertificateController
         certificateList.add(cert);
         equipmentTextField.clear();
         outputLabel.setText(cert.toString());
+    }
+
+    @javafx.fxml.FXML
+    public void NextButtonnn(ActionEvent actionEvent) {
+        SceneSwitcher.switchTo(actionEvent,"Razin_2420842/MonthlyReport.fxml");
     }
 }

@@ -24,8 +24,9 @@
       </Label>
       <Label layoutX="115.0" layoutY="67.0" text="Project ID :" />
       <TextField fx:id="projectIDTextField" layoutX="181.0" layoutY="63.0" />
-      <Button layoutX="230.0" layoutY="166.0" mnemonicParsing="false" onAction="#AssignButtonAction" text="Assign " />
+      <Button layoutX="181.0" layoutY="175.0" mnemonicParsing="false" onAction="#AssignButtonAction" text="Assign " />
       <ComboBox fx:id="equipmentTextField" layoutX="181.0" layoutY="99.0" prefWidth="150.0" />
       <Label layoutX="74.0" layoutY="102.0" text="Select Equipment :" />
+      <Button layoutX="256.0" layoutY="175.0" mnemonicParsing="false" onAction="#NextpageButton" text="Next Page" />
    </children>
 </AnchorPane>
