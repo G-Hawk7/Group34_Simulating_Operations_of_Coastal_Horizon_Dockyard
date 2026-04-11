@@ -95,4 +95,8 @@ public class LogisticsOfficerViewController
         SceneSwitcher.switchTo(actionEvent, "Apurbo_2110400/LO_InventoryView.fxml");
 
     }
+
+    @javafx.fxml.FXML
+    public void backOnClick(ActionEvent actionEvent) {
+    }
 }

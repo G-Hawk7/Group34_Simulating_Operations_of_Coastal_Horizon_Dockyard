@@ -75,4 +75,8 @@ public class MarineEngineerViewController
         SceneSwitcher.switchTo(actionEvent, "Apurbo_2110400/ME_MaintenanceView.fxml");
 
     }
+
+    @javafx.fxml.FXML
+    public void backOnClick(ActionEvent actionEvent) {
+    }
 }
