@@ -1,18 +1,18 @@
 package common.coastal_horizon_dockyard.Razin_2420842;
 
 public class safetyInspection {
-    private String Date ;
-    private String issue1 ;
-    private String issue2 ;
-    private String issue3 ;
-    private String checklist ;
+    private String Date;
+    private String issue1;
+    private String issue2;
+    private String issue3;
+    private String safetyChecklist;
 
-    public safetyInspection(String date, String issue1, String issue2, String issue3, String checklist) {
+    public safetyInspection(String date, String issue1, String issue2, String safetyChecklist, String issue3) {
         Date = date;
         this.issue1 = issue1;
         this.issue2 = issue2;
+        this.safetyChecklist = safetyChecklist;
         this.issue3 = issue3;
-        this.checklist = checklist;
     }
 
     public String getDate() {
@@ -47,11 +47,11 @@ public class safetyInspection {
         this.issue3 = issue3;
     }
 
-    public String getChecklist() {
-        return checklist;
+    public String getSafetyChecklist() {
+        return safetyChecklist;
     }
 
-    public void setChecklist(String checklist) {
-        this.checklist = checklist;
+    public void setSafetyChecklist(String safetyChecklist) {
+        this.safetyChecklist = safetyChecklist;
     }
 }
