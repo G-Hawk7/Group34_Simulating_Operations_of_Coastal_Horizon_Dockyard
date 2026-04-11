@@ -8,7 +8,6 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="common.coastal_horizon_dockyard.Rejwan_2030588.Generate_Inventory_Reports">
    <children>
       <Text layoutX="154.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Generate Inventory Reports">
@@ -19,6 +18,7 @@
       <ComboBox layoutX="128.0" layoutY="99.0" prefWidth="150.0" />
       <Label layoutX="46.0" layoutY="103.0" text="Report Type" />
       <Button layoutX="53.0" layoutY="229.0" mnemonicParsing="false" text="Generate" />
-      <TextArea layoutX="345.0" layoutY="163.0" prefHeight="200.0" prefWidth="200.0" promptText="Report" />
+      <TextArea layoutX="267.0" layoutY="164.0" prefHeight="200.0" prefWidth="200.0" promptText="Report" />
+      <Button layoutX="514.0" layoutY="339.0" mnemonicParsing="false" onAction="#JumpToInventoryAndStoreKeeperOnClick" text="back" />
    </children>
 </AnchorPane>
