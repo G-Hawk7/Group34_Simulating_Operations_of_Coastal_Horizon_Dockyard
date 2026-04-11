@@ -2,6 +2,7 @@ package common.coastal_horizon_dockyard.Razin_2420842;
 
 import javafx.event.ActionEvent;
 import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.util.ArrayList;
 
@@ -20,21 +21,27 @@ public class SafetyInspectionController
     @javafx.fxml.FXML
     private Label outputLabel;
     @javafx.fxml.FXML
-    private TableColumn issuecol;
+    private TableColumn<safetyInspection , String> issuecol;
     @javafx.fxml.FXML
-    private TableColumn issue3col;
+    private TableColumn<safetyInspection , String> issue3col;
     @javafx.fxml.FXML
-    private TableColumn issue2col;
+    private TableColumn<safetyInspection , String> issue2col;
     @javafx.fxml.FXML
-    private TableColumn datecol;
+    private TableColumn<safetyInspection , String> datecol;
     @javafx.fxml.FXML
-    private TableColumn checklistcol;
+    private TableColumn<safetyInspection , String> checklistcol;
     @javafx.fxml.FXML
-    private TableView inspectiontableview;
+    private TableView<safetyInspection> inspectiontableview;
 
     @javafx.fxml.FXML
     public void initialize() {
         safetyChecklist.getItems().addAll("PPE Check","Fire Safety","Equipment Safety");
+
+        datecol.setCellValueFactory(new PropertyValueFactory<>("Date"));
+        checklistcol.setCellValueFactory(new PropertyValueFactory<>("Date"));
+        datecol.setCellValueFactory(new PropertyValueFactory<>("Date"));
+        datecol.setCellValueFactory(new PropertyValueFactory<>("Date"));
+        datecol.setCellValueFactory(new PropertyValueFactory<>("Date"));
     }
     ArrayList<safetyInspection> listofsefty  = new ArrayList<>();
 
