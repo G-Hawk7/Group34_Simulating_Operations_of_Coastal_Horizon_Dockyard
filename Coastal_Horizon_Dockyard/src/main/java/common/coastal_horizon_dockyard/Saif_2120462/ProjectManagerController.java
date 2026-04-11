@@ -1,5 +1,6 @@
 package common.coastal_horizon_dockyard.Saif_2120462;
 
+import common.coastal_horizon_dockyard.SceneSwitcher;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 
@@ -7,6 +8,8 @@ public class ProjectManagerController {
 
     @FXML
     void backToLoginOnClick(ActionEvent event) {
+
+        SceneSwitcher.switchTo(event, "Login.fxml");
 
     }
 
@@ -17,6 +20,8 @@ public class ProjectManagerController {
 
     @FXML
     void opensEngineeringTeamManagementOnClick(ActionEvent event) {
+
+        SceneSwitcher.switchTo(event, "Saif_2120462/PM_EngTeamMgt.fxml");
 
     }
 
@@ -42,6 +47,8 @@ public class ProjectManagerController {
 
     @FXML
     void opensVesselConstructionOnClick(ActionEvent event) {
+
+        SceneSwitcher.switchTo(event, "Saif_2120462/PM_VesselConstruction.fxml");
 
     }
 

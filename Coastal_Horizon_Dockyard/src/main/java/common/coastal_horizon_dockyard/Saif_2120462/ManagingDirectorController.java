@@ -16,14 +16,14 @@ public class ManagingDirectorController {
     @FXML
     void opensClientReportsOnClick(ActionEvent event) {
 
-        SceneSwitcher.switchTo(event, "Saif_2120462/MD_ClientReport.fxml");
+        SceneSwitcher.switchTo(event, "Saif_2120462/MD_ClientReports.fxml");
 
     }
 
     @FXML
     void opensDepartmentHeadManagementOnClick(ActionEvent event) {
 
-        SceneSwitcher.switchTo(event, "Saif_2120462/MD_DepartmentHeadManagement.fxml");
+        SceneSwitcher.switchTo(event, "Saif_2120462/MD_DeptHeadManagement.fxml");
 
     }
 
@@ -37,7 +37,7 @@ public class ManagingDirectorController {
     @FXML
     void opensRevenueExpenditureOnClick(ActionEvent event) {
 
-        SceneSwitcher.switchTo(event, "Saif_2120462/MD_RevenueExpenditure.fxml");
+        SceneSwitcher.switchTo(event, "Saif_2120462/MD_RevenueAndExpenditure.fxml");
 
     }
 
