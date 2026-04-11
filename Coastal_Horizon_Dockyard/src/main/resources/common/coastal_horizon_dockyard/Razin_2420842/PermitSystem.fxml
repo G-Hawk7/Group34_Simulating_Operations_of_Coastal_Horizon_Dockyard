@@ -25,7 +25,7 @@
          </font>
       </Label>
       <Label layoutX="43.0" layoutY="122.0" />
-      <Button layoutX="186.0" layoutY="227.0" mnemonicParsing="false" onAction="#generatepermitButton" text="Generate Permit" />
+      <Button layoutX="79.0" layoutY="242.0" mnemonicParsing="false" onAction="#generatepermitButton" text="Generate Permit" />
       <Label layoutX="28.0" layoutY="149.0" text="Request Details : " />
       <RadioButton fx:id="yesRedioButton" layoutX="152.0" layoutY="182.0" mnemonicParsing="false" text="Yes!">
          <toggleGroup>
@@ -38,5 +38,6 @@
       <Label layoutX="81.0" layoutY="110.0" text="Date :" />
       <TextField fx:id="requestDetailsTextField" layoutX="130.0" layoutY="145.0" />
       <Label fx:id="outputlabel" layoutX="60.0" layoutY="306.0" prefHeight="131.0" prefWidth="209.0" />
+      <Button layoutX="225.0" layoutY="242.0" mnemonicParsing="false" onAction="#nextButton" text="Next" />
    </children>
 </AnchorPane>

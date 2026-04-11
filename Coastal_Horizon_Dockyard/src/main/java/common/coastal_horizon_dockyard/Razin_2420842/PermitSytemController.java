@@ -60,4 +60,8 @@ public class PermitSytemController
         }
 
 
+    @javafx.fxml.FXML
+    public void nextButton(ActionEvent actionEvent) {
+        
     }
+}
