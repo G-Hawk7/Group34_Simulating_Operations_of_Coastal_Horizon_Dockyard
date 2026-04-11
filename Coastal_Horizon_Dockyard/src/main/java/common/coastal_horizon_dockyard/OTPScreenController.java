@@ -12,10 +12,14 @@ public class OTPScreenController {
     @FXML
     void backToForgotIDPasswordOnClick(ActionEvent event) {
 
+        SceneSwitcher.switchTo(event, "ForgotIDPassword.fxml");
+
     }
 
     @FXML
     void verifiesOTPOnClick(ActionEvent event) {
+
+        SceneSwitcher.switchTo(event, "PasswordChanged.fxml");
 
     }
 

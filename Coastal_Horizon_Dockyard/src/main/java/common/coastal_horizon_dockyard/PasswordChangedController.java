@@ -8,6 +8,8 @@ public class PasswordChangedController {
     @FXML
     void backToLoginOnClick(ActionEvent event) {
 
+        SceneSwitcher.switchTo(event, "Login.fxml");
+
     }
 
 }

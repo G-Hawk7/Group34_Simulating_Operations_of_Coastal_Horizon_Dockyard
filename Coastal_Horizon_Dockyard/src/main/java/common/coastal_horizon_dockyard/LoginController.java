@@ -35,6 +35,8 @@ public class LoginController {
     @FXML
     void handleForgotIDPasswordOnClick(ActionEvent event) {
 
+        SceneSwitcher.switchTo(event, "ForgotIDPassword.fxml");
+
     }
 
     @FXML
@@ -77,6 +79,14 @@ public class LoginController {
             case "Safety & Environment Officer":
                 SceneSwitcher.switchTo(event, "Razin_2420842/Safety And Environment Officer.fxml");
                 break;
+
+            case "Dockyard Operations Coordinator":
+                SceneSwitcher.switchTo(event, "Razin_2420842/DockyardOperationsCoordinator.fxml");
+                break;
+
+            default:
+                displaysErrorLabel.setText("Dashboard not found for this user!");
+                displaysErrorLabel.setVisible(true);
         }
 
     }
