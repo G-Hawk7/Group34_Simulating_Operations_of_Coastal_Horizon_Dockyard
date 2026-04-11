@@ -51,7 +51,7 @@ public class SafetyInspectionController
         inspectiontableview.getItems().addAll(listofsefty);
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void backButton(ActionEvent actionEvent) {
 
     }
@@ -71,5 +71,11 @@ public class SafetyInspectionController
         safetyInspection safety = new safetyInspection(date, issue1, issue2, selectedChecklist , issue3);
         listofsefty.add(safety);
         outputLabel.setText("Data Saved to List.");
+    }
+
+    @javafx.fxml.FXML
+    public void NextButton(ActionEvent actionEvent) {
+
+
     }
 }

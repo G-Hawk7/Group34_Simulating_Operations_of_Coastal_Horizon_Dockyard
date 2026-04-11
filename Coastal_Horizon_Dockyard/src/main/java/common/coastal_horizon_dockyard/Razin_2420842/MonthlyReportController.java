@@ -37,9 +37,11 @@ public class MonthlyReportController {
         String selectedMonth = monthCombobox.getValue();
         String selectedType = reportCombobox.getValue();
 
-        if (selectedMonth == null || selectedType == null) {
-            System.out.println("Please select both Month and Report Type!");
-            return;
+        if (selectedMonth == null) {
+            System.out.println("Error: Please select a Month!");
+        }
+        else if (selectedType == null) {
+            System.out.println("Error: Please select a Report Type!");
         }
 
         String dummySummary = selectedType + " - Inspections: 10, Incidents: 2";

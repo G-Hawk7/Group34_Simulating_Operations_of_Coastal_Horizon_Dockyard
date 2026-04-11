@@ -37,7 +37,7 @@
             <TableColumn fx:id="issue3col" prefWidth="121.0" text="issue3" />
         </columns>
       </TableView>
-      <Button layoutX="197.0" layoutY="419.0" mnemonicParsing="false" onAction="#backButton" text="Back" />
+      <Button layoutX="178.0" layoutY="419.0" mnemonicParsing="false" onAction="#NextButton" text="Next Page" />
       <Button layoutX="99.0" layoutY="419.0" mnemonicParsing="false" onAction="#submitActionButton" text="Table view" />
    </children>
 </AnchorPane>
