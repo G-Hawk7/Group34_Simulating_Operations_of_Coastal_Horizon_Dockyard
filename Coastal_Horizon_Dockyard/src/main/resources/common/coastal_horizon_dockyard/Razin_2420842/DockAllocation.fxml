@@ -3,11 +3,13 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="common.coastal_horizon_dockyard.Razin_2420842.DockAllocationController">
+<AnchorPane prefHeight="400.0" prefWidth="897.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="common.coastal_horizon_dockyard.Razin_2420842.DockAllocationController">
    <children>
       <TextField fx:id="shipidTextField" layoutX="235.0" layoutY="101.0" />
       <Label layoutX="199.0" layoutY="14.0" text="Dock Allocation">
@@ -19,9 +21,17 @@
       <TextField fx:id="sizeTextField" layoutX="236.0" layoutY="137.0" />
       <Label layoutX="203.0" layoutY="141.0" text="Size :" />
       <TextField fx:id="arrivaldateTextField" layoutX="236.0" layoutY="172.0" />
-      <Label layoutX="161.0" layoutY="175.0" text="Arrival Date :" />
+      <Label layoutX="161.0" layoutY="175.0" text="Arrival Date " />
       <ComboBox fx:id="dockcombobox" layoutX="236.0" layoutY="213.0" prefWidth="150.0" />
       <Button layoutX="274.0" layoutY="262.0" mnemonicParsing="false" onAction="#AssignButton" text="Assign" />
       <Label layoutX="197.0" layoutY="215.0" text="Dock :" />
+      <TableView fx:id="TableDockallocation" layoutX="408.0" layoutY="97.0" prefHeight="266.0" prefWidth="484.0">
+        <columns>
+          <TableColumn fx:id="shipidcol" text="Ship ID " />
+          <TableColumn fx:id="sizecol" prefWidth="71.0" text="Size " />
+            <TableColumn fx:id="arrivaldatecol" prefWidth="219.0" text="Arrival Date " />
+            <TableColumn fx:id="dockcol" prefWidth="113.0" text="Dock " />
+        </columns>
+      </TableView>
    </children>
 </AnchorPane>
