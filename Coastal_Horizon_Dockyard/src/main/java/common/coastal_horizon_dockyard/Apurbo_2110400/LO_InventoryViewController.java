@@ -1,5 +1,6 @@
 package common.coastal_horizon_dockyard.Apurbo_2110400;
 
+import common.coastal_horizon_dockyard.SceneSwitcher;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -83,9 +84,8 @@ public class LO_InventoryViewController
 
     @javafx.fxml.FXML
     public void backOnClick(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Apurbo_2110400/LogisticsOfficerView.fxml"));
-        Node node = fxmlLoader.load();
-        inventoryMainPane.getChildren().setAll(node);
+
+        SceneSwitcher.switchTo(actionEvent, "Apurbo_2110400/LogisticsOfficerView.fxml");
 
     }
 }

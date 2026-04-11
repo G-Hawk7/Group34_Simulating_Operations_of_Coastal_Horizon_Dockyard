@@ -1,5 +1,6 @@
 package common.coastal_horizon_dockyard.Apurbo_2110400;
 
+import common.coastal_horizon_dockyard.SceneSwitcher;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -63,9 +64,8 @@ public class ME_FuelViewController
 
     @javafx.fxml.FXML
     public void backOnClick(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Apurbo_2110400/MarineEngineerView.fxml"));
-        Node node = fxmlLoader.load();
-        fuelMainPane.getChildren().setAll(node);
+
+        SceneSwitcher.switchTo(actionEvent, "Apurbo_2110400/MarineEngineerView.fxml");
         
     }
 }
