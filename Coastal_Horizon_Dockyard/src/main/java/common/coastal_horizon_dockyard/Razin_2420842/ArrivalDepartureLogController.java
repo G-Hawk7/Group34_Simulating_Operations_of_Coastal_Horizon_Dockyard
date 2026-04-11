@@ -19,5 +19,6 @@ public class ArrivalDepartureLogController
 
     @javafx.fxml.FXML
     public void SaveButton(ActionEvent actionEvent) {
+
     }
 }
