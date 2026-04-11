@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="common.coastal_horizon_dockyard.Razin_2420842.ScheduleTimelineController">
+<AnchorPane prefHeight="402.0" prefWidth="601.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="common.coastal_horizon_dockyard.Razin_2420842.ScheduleTimelineController">
    <children>
       <Label layoutX="180.0" layoutY="14.0" text="Schedule Timeline">
          <font>
@@ -19,6 +19,6 @@
       <TextField fx:id="projectidTextField" layoutX="191.0" layoutY="86.0" />
       <Button layoutX="240.0" layoutY="174.0" mnemonicParsing="false" onAction="#CreateButtonAction" text="Create" />
       <Label fx:id="outputLabel" layoutX="149.0" layoutY="268.0" prefHeight="110.0" prefWidth="212.0" />
-      <Button layoutX="240.0" layoutY="219.0" mnemonicParsing="false" onAction="#nextActionButton" text="Next" />
+      <Button layoutX="240.0" layoutY="219.0" mnemonicParsing="false" onAction="#nextActionButton" prefHeight="25.0" prefWidth="51.0" text="Next" />
    </children>
 </AnchorPane>
