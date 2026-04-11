@@ -1,5 +1,6 @@
 package common.coastal_horizon_dockyard.Saif_2120462;
 
+import common.coastal_horizon_dockyard.SceneSwitcher;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 
@@ -8,10 +9,14 @@ public class ManagingDirectorController {
     @FXML
     void backToLoginOnClick(ActionEvent event) {
 
+        SceneSwitcher.switchTo(event, "Login.fxml");
+
     }
 
     @FXML
     void opensClientReportsOnClick(ActionEvent event) {
+
+        SceneSwitcher.switchTo(event, "Saif_2120462/MD_ClientReport.fxml");
 
     }
 
