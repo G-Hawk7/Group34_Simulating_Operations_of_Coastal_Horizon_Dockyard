@@ -19,8 +19,8 @@
       </Text>
       <Label layoutX="31.0" layoutY="118.0" text="Transaction" />
       <Label layoutX="17.0" layoutY="163.0" text="Equipment typer" />
-      <ComboBox layoutX="114.0" layoutY="159.0" prefWidth="150.0" />
-      <TextField layoutX="106.0" layoutY="114.0" />
+      <ComboBox fx:id="EquipmenttyperComboBox" layoutX="114.0" layoutY="159.0" prefWidth="150.0" />
+      <TextField fx:id="TransactionTextField" layoutX="106.0" layoutY="114.0" />
       <Button layoutX="36.0" layoutY="251.0" mnemonicParsing="false" text="Save" />
       <TableView layoutX="290.0" layoutY="151.0" prefHeight="200.0" prefWidth="200.0">
         <columns>
